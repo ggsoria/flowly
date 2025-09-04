@@ -1,0 +1,29 @@
+.react-datepicker {
+  background-color: #16181b;
+  border: 1px solid #8ea1b6;
+  margin-left: 1.5rem;
+}
+
+.react-datepicker__header {
+  background-color: #16181b;
+  color: #8ea1b6;
+}
+
+.react-datepicker__month {
+  display: grid;
+  gap: 0.5rem;
+}
+.react-datepicker__month-text {
+  color: #8ea1b6;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.react-datepicker__month-text:hover {
+  color: #16181b;
+}
+
+.react-datepicker__month-text--selected {
+  background-color: #8ea1b6;
+  color: #16181b;
+}

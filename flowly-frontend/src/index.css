@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@plugin 'tailwind-scrollbar' {
+  nocompatible: true;
+  preferredstrategy: "pseudoelements";
+}
+
+@theme {
+  --color-dark-bg: #0e1013;
+  --color-card-dark: #0b0e12;
+
+  --color-primary-dark: #c7d0db;
+  --color-secondary-dark: #8ea1b6;
+
+  --color-border-dark: #272a33;
+
+  --color-shadow: #00000099;
+}
+
+@theme {
+  --color-light-bg: #f9fafb;
+  --color-card-light: #ffffff;
+
+  --color-primary-light: #0e1013;
+  --color-secondary-light: #4b5563;
+
+  --color-border-light: #e5e7eb;
+
+  --color-shadow-light: #0000001a;
+}
+
+@theme static {
+  --color-notification: var(--color-red-500);
+  --color-positive: #16a34a;
+  --color-negative: #dc2626;
+  --color-neutral: #f59e0b;
+  --color-date: #f97316;
+  --color-chart-positive: #73e770;
+  --color-chart-negative: #142c29;
+  --color-chart-deficit: #e74c3c;
+  /* --color-button: #3e4654; */
+  --color-button: var(--color-gray-800);
+  --color-button-hover: #2a303a;
+
+  --color-pay: #2563eb;
+  --color-highlight-payment: #3b5dcf1a;
+}
